@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="taskManagerApp">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script>
+        $(function () {
+
+            /*
+            var dato = null;
+
+            var catalog1 = $.get("http://localhost:8080/eftapp/routingtype/MX", null, function (rs) {
+                console.debug(rs);
+                dato = "datos entregados";
+            }, "json");
+
+            var catalog2 = $.get("http://localhost:8080/eftapp/account/MX");
+
+            //test of deferred explicit
+            var suma = function (n1, n2) {
+                var r = Number(n1) + Number(n2);
+                var p = $.Deferred();
+                if (r) {
+                    p.resolve(r);
+                } else {
+                    p.reject("incorrect params");
+                }
+                return p.promise();
+            }
+
+            suma(1, 3).then(function (rs) {
+                console.info(rs);
+            }, function (rs) {
+                console.error(rs);
+            });
+
+
+
+            catalog1.done(function () {
+                console.info("solicitud correcta");
+                console.info(dato);
+            });
+
+            catalog1.fail(function (rs) {
+                console.info("error en la solicitud.");
+                console.log(rs);
+            });
+
+            $.when(catalog1, catalog1).then(function () {
+                console.info("catalogos cargados");
+            }, function () {
+                console.error("fallo al cargar algun catalogo");
+            });
+
+            $("#click").click(function () {
+                catalog1.done(function () {
+                    console.info("segunda operacion del catalogo 1");
+                });
+            });
+
+            $("#suma2").click(function () {
+                suma2 = suma(1, 2);
+                suma2.then(function (rs) {
+                    console.info(rs);
+                }, function (rs) {
+                    console.error(rs);
+                });
+
+                suma2.done(function () {
+                    console.info("suma 2 correcta.");
+                });
+            });
+
+          */
+
+        });
+    </script>
+</head>
+<body ng-controller="taskManagerController">
+    <button id="click">cargar segunda operacion en el primer catalogo</button>
+    <button ng-click="solicitud()">solicitar</button>
+</body>
+</html>
